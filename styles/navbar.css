@@ -1,0 +1,117 @@
+@import url("./globals.css");
+
+.logo-container {
+  padding-left: 5em;
+}
+
+.logo-image {
+  max-height: 2rem;
+}
+
+.form-control:focus {
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.navbar {
+  background-color: var(--navbar-background-color);
+}
+
+.navigation-links {
+  white-space: nowrap;
+  gap: 2em;
+}
+
+.icons-container {
+  padding-right: 4em;
+}
+
+.navbar ul li a {
+  color: var(--navbar-item-color);
+  font-family: var(--text-font);
+  font-weight: var(--navbar-item-font-weight);
+  font-size: var(--navbar-item-font-size);
+  transition: 0.1s ease-in;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+}
+
+.navbar ul li a:focus {
+  text-decoration: underline;
+}
+
+.navbar ul li a:hover {
+  text-decoration-color: var(--navbar-item-color);
+}
+
+.navbar-icon {
+  height: 1em;
+}
+
+#search-bar,
+#search-icon,
+#bookmark-icon,
+.navigation-links {
+  transition-property: opacity;
+  transition-duration: 0.3s;
+}
+
+#search-bar {
+  min-width: 30em;
+  background: url(../images/png/search-dark@2x.png) no-repeat left
+    var(--navbar-item-color);
+  background-size: 1em;
+  padding-left: 2em;
+}
+
+#search-bar,
+#search-close {
+  display: none;
+}
+
+#search-close {
+  padding-left: 1em;
+  opacity: 0;
+}
+
+#bookmark-icon {
+  padding-left: 1em;
+}
+
+#search-icon img:last-child,
+#bookmark-icon img:last-child {
+  display: none;
+}
+
+#search-icon:hover img:last-child,
+#bookmark-icon:hover img:last-child {
+  display: block;
+}
+#search-icon:hover img:first-child,
+#bookmark-icon:hover img:first-child {
+  display: none;
+}
+
+#search-icon:focus img:last-child,
+#bookmark-icon:focus img:last-child {
+  display: block;
+}
+#search-icon:focus img:first-child,
+#bookmark-icon:focus img:first-child {
+  display: none;
+}
+
+/*ANIMATIONS*/
+@keyframes fade_in_show {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    transform-origin: bottom right;
+  }
+}

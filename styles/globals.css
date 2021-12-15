@@ -1,0 +1,21 @@
+:root {
+  --highlighted-color: #533db0;
+  --text-color: #1e1e1e;
+  --text-font: "Inter" sans-serif;
+  --small-text-size: 13px;
+
+  --boc-blue: #6c83d1;
+
+  --navbar-background-color: #363259;
+  --navbar-item-color: #f0f0f0;
+  --navbar-item-font-weight: 400;
+  --navbar-item-font-size: var(--small-text-size);
+}
+
+::-moz-selection {
+  background: var(--highlighted-color);
+}
+
+::selection {
+  background: var(--highlighted-color);
+}
