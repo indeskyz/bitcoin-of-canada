@@ -1,21 +1,40 @@
 :root {
-  --highlighted-color: #533db0;
+  --text-selection-color: #79787f;
   --text-color: #1e1e1e;
   --text-font: "Inter" sans-serif;
+
   --small-text-size: 13px;
+  --p2-text-size: 14px;
+  --p1-text-size: 16px;
+  --h5-text-size: 14px;
+  --h4-text-size: 16px;
+  --h3-text-size: 16px;
+  --h2-text-size: 22px;
+  --h3-text-size: 32px;
+
+  --light-font-weight: 400;
+  --med-font-weight: 600;
+  --heavy-font-weight: 700;
 
   --boc-blue: #6c83d1;
 
   --navbar-background-color: #363259;
   --navbar-item-color: #f0f0f0;
-  --navbar-item-font-weight: 400;
-  --navbar-item-font-size: var(--small-text-size);
+  --navbar-item-font-weight: var(--light-font-weight);
+  --navbar-item-font-size: 14px;
 }
 
 ::-moz-selection {
-  background: var(--highlighted-color);
+  background: var(--text-selection-color);
 }
 
 ::selection {
-  background: var(--highlighted-color);
+  background: var(--text-selection-color);
+}
+
+input[type="text"],
+input[type="search"] {
+  color: var(--text-color);
+  font-family: var(--text-font);
+  font-weight: var(--med-font-weight);
 }
