@@ -60,8 +60,9 @@
       <!-- Right elements -->
       <div class="d-flex align-items-center icons-container">
         <!-- Search form -->
-        <form class="input-group search-form">
-          <input autocomplete="off" type="search" class="form-control rounded" id="search-bar" />
+        <form class="input-group search-form" method="POST" action="search.html" enctype="multipart/form">
+          <input type="submit" class="d-flex align-items-center"  id="search-form-icon" value="">
+          <input autocomplete="off" type="text" class="form-control rounded" id="search-bar" />
           <a class="d-flex align-items-center" href="#" id="search-close">
             <img src="./images/png/search-close@2x.png" alt="search-close" loading="lazy" class="navbar-icon" />
           </a>
