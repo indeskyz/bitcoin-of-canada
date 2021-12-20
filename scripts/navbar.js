@@ -3,7 +3,7 @@ const searchBar = document.querySelector("#search-bar");
 const openSearch = document.querySelector("#search-icon");
 const bookmarkIcon = document.querySelector("#bookmark-icon");
 const closeSearch = document.querySelector("#search-close");
-const navigationLinks = document.querySelector(".navigation-links");
+const navigationLinks = document.querySelectorAll(".nav-item");
 
 openSearch.onclick = () => {
   searchBar.style.display = "block";
@@ -14,7 +14,10 @@ openSearch.onclick = () => {
   searchBar.focus();
   openSearch.style.opacity = 0;
   bookmarkIcon.style.opacity = 0;
-  navigationLinks.style.opacity = 0;
+  navigationLinks.forEach(itemLink => {
+  itemLink.style.opacity = 0;
+    
+  });
 };
 
 closeSearch.onclick = () => {
@@ -23,6 +26,9 @@ closeSearch.onclick = () => {
   closeSearch.style.opacity = 0;
   openSearch.style.opacity = 1;
   bookmarkIcon.style.opacity = 1;
-  navigationLinks.style.opacity = 1;
+  navigationLinks.forEach(itemLink => {
+  itemLink.style.opacity = 1;
+    
+  });
 };
 
