@@ -21,6 +21,7 @@
       <link rel="stylesheet" href="./styles/navbar.css" />
       <link rel="stylesheet" href="./styles/globals.css" />
       <link rel="stylesheet" href="./styles/footer.css" />
+      <link rel="stylesheet" href="./styles/main.css" />
    </head>
    <body>
       <!-- Navbar -->
@@ -84,8 +85,105 @@
       </nav>
       <!-- END Navbar -->
       <!-- CONTENT BEGINS-->
-      <!-- SOCIAL MEDIA LINKS-->
-      <!-- Go to www.addthis.com/dashboard to customize your tools -->
+   <div class="wrapper">
+      <!--FIRST SECTION-->
+       <div class="first-section-container">
+         <h1 class="main-heading">Today's Cryptocurrency by Market Cap</h1>
+         <div class="advertisement-space-mobile">
+            <a href="#"><img src="./images/png/ad-space-300x250.jpg" alt="advertisement-photo" class="advertisement-image"></a>
+         </div>
+         <div class="scroll-container">
+            <div class="horizontal-scroll tile-container">
+               <div class="horizontal-scroll__item">
+                  <div class="top-border">
+                     <div class="top-border-content"><img id="top-preformers-icon" class="tile-heading-icon" src="./images/png/top@2x.png" alt="top-preformers-icon" loading="lazy"><img>
+                     Top Preformers (24h)</div>
+                     <div class="content">
+                        <ul class="tile-items">
+                           <li id="first-preformer" class="preformers"><a href="#">Terrablock</a>  
+                              <span class="ticker-name"> TBC</span>
+                              <span class="price-change">+5544.06%</span>
+                           </li>
+                           <li id="second-preformer" class="preformers"><a href="#">Flokinomics</a>
+                              <span class="ticker-name"> FLOKIN</span>
+                              <span class="price-change">+1643.43%</span>
+                           </li>
+                           <li id="third-preformer" class="preformers"><a href="#">MilliMeter</a>
+                              <span class="ticker-name"> MM</span>
+                              <span class="price-change">+1522.87%</span>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="horizontal-scroll__item">
+                  <div class="top-border">
+                     <div class="top-border-content"><img id="trending-icon" class="tile-heading-icon" src="./images/png/danger 1@2x.png" alt="trending-icon" loading="lazy"><img>
+                     Trending (24h)</div>
+                     <div class="content">
+                        <ul class="tile-items">
+                           <li id="first-trending" class="trending"><a href="#">ADAUP</a> 
+                              <span class="ticker-name"> ADAUP</span>
+                              <span class="price-change">+3.58%</span>
+                           </li>
+                           <li id="second-trending" class="trending"><a href="#">Ronin Gamez</a>
+                              <span class="ticker-name"> FRONINGMZ</span>
+                              <span class="price-change">+13.17%</span>
+                           </li>
+                           <li id="third-trending" class="trending"><a href="#">Only Up</a>
+                              <span class="ticker-name"> Sup</span>
+                              <span class="price-change">+962.22%</span>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="horizontal-scroll__item">
+                  <div class="top-border">
+                     <div class="top-border-content"><img id="bookmarks-icon" class="tile-heading-icon" src="./images/png/wishlist@2x.png" alt="bookmarks-icon" loading="lazy"><img>
+                     My Watchlist</div>
+                     <div class="content">
+                        <div class="coming-soon-content">
+                           <img src="images/png/clock@2x.png" id="coming-soon-icon" class="tile-heading-icon" alt="coming-soon-icon">
+                        </div>
+                           <p id="coming-soon-text">Coming Soon...</p>
+                        <!-- UNCOMMENT WHEN CONTENT IS READY -->
+                        <!-- <ul class="tile-items">
+                           <li id="first-bookmark" class="bookmarks"><a href="#">BOOKMARK</a>
+                              <span class="ticker-name"> TBC</span>
+                              <span class="price-change">+5544.06%</span>
+                           </li>
+                           <li id="second-bookmark" class="bookmarks"> <a href="#">BOOKMARK</a>
+                              <span class="ticker-name"> FLOKIN</span>
+                              <span class="price-change">+1643.43%</span>
+                           </li>
+                           <li id="third-bookmark" class="bookmarks"><a href="#">BOOKMARK</a>
+                              <span class="ticker-name"> MM</span>
+                              <span class="price-change">+1522.87%</span>
+                           </li>
+                        </ul> -->
+                     </div>
+                  </div>
+               </div>
+                  <div class="advertisement-space">
+                     <a href="#"><img src="./images/png/ad-space-300x250.jpg" alt="advertisement-photo" class="advertisement-image"></a>
+                  </div>
+
+               </div>
+            </div>
+         </div>
+      </div>
+      
+      <!--SECOND SECTION-->
+       <div class="second-section-container"></div> 
+      
+      <!--THIRD SECTION-->
+      <div class="third-section-container"></div> 
+
+   </div>
+
+   
+
 
       <!-- END CONTENT-->
       <!-- FOOTER-->
@@ -110,7 +208,8 @@
       <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script type="text/javascript" src="./assets/md5/js/mdb.min.js"></script>
       <script type="text/javascript" src="./scripts/navbar.js"></script>
-      <!-- Go to www.addthis.com/dashboard to customize your tools -->
+      <script type="text/javascript" src="./scripts/data-tables.js"></script>
+      <!-- SOCIAL MEDIA LINKS -->
       <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid= ra-61c0e90e4173bb9f"></script>
 
    </body>

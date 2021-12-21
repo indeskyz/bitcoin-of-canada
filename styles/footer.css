@@ -1,3 +1,5 @@
+@import url("./globals.css");
+
 .footer {
   padding: 50px 0;
   background-color: var(--navbar-background-color);
@@ -28,9 +30,9 @@
 .copyright {
   padding-top: 2em;
   opacity: 0.3;
-  font-size: var(--small-text-size);
+  font-size: var(--small-font-size);
   font-weight: var(--navbar-item-font-weight);
-  margin-bottom: 0;
+  margin-left:2em;
 }
 .copyright-hidden {
   display: none;

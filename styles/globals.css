@@ -3,19 +3,19 @@
   --text-color: #1e1e1e;
   --text-font: "Inter" sans-serif;
 
-  --small-text-size: 13px;
+  --small-font-size: 13px;
 
-  --h1-text-size: 32px;
-  --h1-text-size-mobile: 26px;
-  --h2-text-size:22px;
-  --h2-text-size-mobile:18px;
-  --h3-text-size:16px;
-  --h4-text-size:16px;
-  --h5-text-size:16px;
+  --h1-font-size: 32px;
+  --h1-font-size-mobile: 26px;
+  --h2-font-size:22px;
+  --h2-font-size-mobile:18px;
+  --h3-font-size:16px;
+  --h4-font-size:16px;
+  --h5-font-size:16px;
 
-  --p1-text-size:16px;
-  --p2-text-size:14px;
-  --p3-text-size:13px;
+  --p1-font-size:16px;
+  --p2-font-size:14px;
+  --p3-font-size:13px;
 
   --light-font-weight: 400;
   --med-font-weight: 600;
@@ -26,8 +26,8 @@
   --cta-link-hover-color: #533DB0;
   --dark-bg: #363259;
   --gradient-color:linear-gradient(to right, #9750CA , #4A9EDC);
-  --up-bttn-color: #57BB37;
-  --down-bttn-color: #D73124;
+  --green: #57BB37;
+  --red: #D73124;
   --light-blue: #F0F3FB;
   --grey-1: #F0F0F0;
   --grey-2: #D6D6D6; 
