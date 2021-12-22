@@ -12,14 +12,11 @@ body {
 .wrapper {
   padding: 2em 2em 2em 6em;
   background-color: var(--grey-1);
-  width: 100%;
-  max-width: 100%;
-  margin: auto;
 }
 
 .container {
   display: flex;
-  padding: 2em 2em 2em 6em;
+  padding: 2em 2em 2em 2em;
   width: 100%;
   max-width: calc(100% - 20px);
   margin: auto;
@@ -194,9 +191,11 @@ li a:hover,
 }
 
 /*CHART CONTAINER*/
+
 .chart-container {
   display: flex;
-  padding-left: 6.5em;
+  padding-left: 2em;
+  padding-right:2em;
 }
 
 /*SECOND SECTION*/
@@ -366,11 +365,4 @@ li a:hover,
   .advertisement {
     padding-left: 10rem;
   }
-}
-
-@media screen and (min-width: 1318px) {
-  .chart-container{
-    padding-right:15rem;
-  }
-
 }
