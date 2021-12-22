@@ -1,43 +1,47 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Bitcoin of Canada</title>
-      <!-- Font Awesome-->
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-      <!-- Inter Font -->
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
-      <!-- STYLING-->
-      <link rel="stylesheet" href="./assets/md5/css/mdb.min.css" />
-      <link rel="stylesheet" href="./styles/navbar.css" />
-      <link rel="stylesheet" href="./styles/globals.css" />
-      <link rel="stylesheet" href="./styles/footer.css" />
-      <link rel="stylesheet" href="./styles/main.css" />
-   </head>
-   <body>
-      <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg">
-         <!-- Container wrapper -->
-         <div class="container-fluid">
+<head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Bitcoin of Canada</title>
+   <!-- Font Awesome-->
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   <!-- Inter Font -->
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+   <!-- STYLING-->
+   <link rel="stylesheet" href="./assets/md5/css/mdb.min.css" />
+   <link rel="stylesheet" href="./styles/navbar.css" />
+   <link rel="stylesheet" href="./styles/globals.css" />
+   <link rel="stylesheet" href="./styles/footer.css" />
+   <link rel="stylesheet" href="./styles/main.css" />
+</head>
+
+<body>
+   <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg">
+      <!-- Container wrapper -->
+      <div class="container-fluid">
          <div class="logo-container">
             <a class="navbar-brand mt-2 mt-lg-0" href="index.html">
-            <img src="./images/logos/png/canada-logo@2x.png" alt="Bitcoin-of-Canada-logo" loading="lazy" class="logo-image" id="brand-logo" />
+               <img src="./images/logos/png/canada-logo@2x.png" alt="Bitcoin-of-Canada-logo" loading="lazy"
+                  class="logo-image" id="brand-logo" />
             </a>
          </div>
          <!-- Toggle button -->
-         <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-         <i class="fas fa-bars">
-         </i>
+         <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+            data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="fas fa-bars">
+            </i>
          </button>
          <!-- Collapsible wrapper -->
          <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -59,21 +63,24 @@
                <div class="d-flex align-items-center icons-container">
                   <!-- Search form -->
                   <form class="input-group search-form" method="POST" action="search.html" enctype="multipart/form">
-                     <input type="submit" class="d-flex align-items-center"  id="search-form-icon" value="">
+                     <input type="submit" class="d-flex align-items-center" id="search-form-icon" value="">
                      <input autocomplete="off" type="text" class="form-control rounded" id="search-bar" />
                      <a class="d-flex align-items-center" href="#" id="search-close">
-                     <img src="./images/png/search-close@2x.png" alt="search-close" loading="lazy" class="navbar-icon" />
+                        <img src="./images/png/search-close@2x.png" alt="search-close" loading="lazy"
+                           class="navbar-icon" />
                      </a>
                   </form>
                   <!-- Search Icon -->
                   <a class="d-flex align-items-center" href="#" id="search-icon">
-                  <img src="./images/png/search@2x.png" alt="Search" loading="lazy" class="navbar-icon" />
-                  <img src="./images/png/search-hover@2x.png" alt="Search-Hover" loading="lazy" class="navbar-icon" />
+                     <img src="./images/png/search@2x.png" alt="Search" loading="lazy" class="navbar-icon" />
+                     <img src="./images/png/search-hover@2x.png" alt="Search-Hover" loading="lazy"
+                        class="navbar-icon" />
                   </a>
                   <!-- Bookmark Icon -->
                   <a class="d-flex align-items-center" href="#" id="bookmark-icon">
-                  <img src="./images/png/bookmark@2x.png" alt="Bookmark" loading="lazy" class="navbar-icon" />
-                  <img src="./images/png/bookmark-hover@2x.png" alt="Bookmark-Hover" loading="lazy" class="navbar-icon" />
+                     <img src="./images/png/bookmark@2x.png" alt="Bookmark" loading="lazy" class="navbar-icon" />
+                     <img src="./images/png/bookmark-hover@2x.png" alt="Bookmark-Hover" loading="lazy"
+                        class="navbar-icon" />
                   </a>
                </div>
                <!-- END Right elements -->
@@ -82,73 +89,77 @@
             <!-- END Collapsible wrapper -->
          </div>
          <!-- END Container wrapper -->
-      </nav>
-      <!-- END Navbar -->
-      <!-- CONTENT BEGINS-->
-   <div class="wrapper">
-      <!--FIRST SECTION-->
-       <div class="first-section-container">
-         <h1 class="main-heading">Today's Cryptocurrency by Market Cap</h1>
-         <div class="advertisement-space-mobile">
-            <a href="#"><img src="./images/png/ad-space-300x250.jpg" alt="advertisement-photo" class="advertisement-image"></a>
-         </div>
-         <div class="scroll-container">
-            <div class="horizontal-scroll tile-container">
-               <div class="horizontal-scroll__item">
-                  <div class="top-border">
-                     <div class="top-border-content"><img id="top-preformers-icon" class="tile-heading-icon" src="./images/png/top@2x.png" alt="top-preformers-icon" loading="lazy"><img>
+   </nav>
+   <!-- END Navbar -->
+   <!-- CONTENT BEGINS-->
+   <!--FIRST SECTION-->
+   <div class="container">
+      <div class="scroll-container">
+            <h1 class="main-heading">Today's Cryptocurrency by Market Cap</h1>
+            <div class="advertisement-space-mobile">
+               <a href="#"><img src="./images/png/ad-space-300x250.jpg" alt="advertisement-photo"
+                     class="advertisement-image"></a>
+            </div>
+         <div class="horizontal-scroll tile-container">
+            <div class="horizontal-scroll__item">
+               <div class="top-border">
+                  <div class="top-border-content"><img id="top-preformers-icon" class="tile-heading-icon"
+                        src="./images/png/top@2x.png" alt="top-preformers-icon" loading="lazy"><img>
                      Top Preformers (24h)</div>
-                     <div class="content">
-                        <ul class="tile-items">
-                           <li id="first-preformer" class="preformers"><a href="#">Terrablock</a>  
-                              <span class="ticker-name"> TBC</span>
-                              <span class="price-change">+5544.06%</span>
-                           </li>
-                           <li id="second-preformer" class="preformers"><a href="#">Flokinomics</a>
-                              <span class="ticker-name"> FLOKIN</span>
-                              <span class="price-change">+1643.43%</span>
-                           </li>
-                           <li id="third-preformer" class="preformers"><a href="#">MilliMeter</a>
-                              <span class="ticker-name"> MM</span>
-                              <span class="price-change">+1522.87%</span>
-                           </li>
-                        </ul>
-                     </div>
+                  <div class="content">
+                     <ul class="tile-items">
+                        <li id="first-preformer" class="preformers"><a href="#">Terrablock</a>
+                           <span class="ticker-name"> TBC</span>
+                           <span class="price-change">+5544.06%</span>
+                        </li>
+                        <li id="second-preformer" class="preformers"><a href="#">Flokinomics</a>
+                           <span class="ticker-name"> FLOKIN</span>
+                           <span class="price-change">+1643.43%</span>
+                        </li>
+                        <li id="third-preformer" class="preformers"><a href="#">MilliMeter</a>
+                           <span class="ticker-name"> MM</span>
+                           <span class="price-change">+1522.87%</span>
+                        </li>
+                     </ul>
                   </div>
                </div>
-               <div class="horizontal-scroll__item">
-                  <div class="top-border">
-                     <div class="top-border-content"><img id="trending-icon" class="tile-heading-icon" src="./images/png/danger 1@2x.png" alt="trending-icon" loading="lazy"><img>
+            </div>
+            <div class="horizontal-scroll__item">
+               <div class="top-border">
+                  <div class="top-border-content"><img id="trending-icon" class="tile-heading-icon"
+                        src="./images/png/danger 1@2x.png" alt="trending-icon" loading="lazy"><img>
                      Trending (24h)</div>
-                     <div class="content">
-                        <ul class="tile-items">
-                           <li id="first-trending" class="trending"><a href="#">ADAUP</a> 
-                              <span class="ticker-name"> ADAUP</span>
-                              <span class="price-change">+3.58%</span>
-                           </li>
-                           <li id="second-trending" class="trending"><a href="#">Ronin Gamez</a>
-                              <span class="ticker-name"> FRONINGMZ</span>
-                              <span class="price-change">+13.17%</span>
-                           </li>
-                           <li id="third-trending" class="trending"><a href="#">Only Up</a>
-                              <span class="ticker-name"> Sup</span>
-                              <span class="price-change">+962.22%</span>
-                           </li>
-                        </ul>
-                     </div>
+                  <div class="content">
+                     <ul class="tile-items">
+                        <li id="first-trending" class="trending"><a href="#">ADAUP</a>
+                           <span class="ticker-name"> ADAUP</span>
+                           <span class="price-change">+3.58%</span>
+                        </li>
+                        <li id="second-trending" class="trending"><a href="#">Ronin Gamez</a>
+                           <span class="ticker-name"> FRONINGMZ</span>
+                           <span class="price-change">+13.17%</span>
+                        </li>
+                        <li id="third-trending" class="trending"><a href="#">Only Up</a>
+                           <span class="ticker-name"> Sup</span>
+                           <span class="price-change">+962.22%</span>
+                        </li>
+                     </ul>
                   </div>
                </div>
-               <div class="horizontal-scroll__item">
-                  <div class="top-border">
-                     <div class="top-border-content"><img id="bookmarks-icon" class="tile-heading-icon" src="./images/png/wishlist@2x.png" alt="bookmarks-icon" loading="lazy"><img>
+            </div>
+            <div class="horizontal-scroll__item">
+               <div class="top-border">
+                  <div class="top-border-content"><img id="bookmarks-icon" class="tile-heading-icon"
+                        src="./images/png/wishlist@2x.png" alt="bookmarks-icon" loading="lazy"><img>
                      My Watchlist</div>
-                     <div class="content">
-                        <div class="coming-soon-content">
-                           <img src="images/png/clock@2x.png" id="coming-soon-icon" class="tile-heading-icon" alt="coming-soon-icon">
-                        </div>
-                           <p id="coming-soon-text">Coming Soon...</p>
-                        <!-- UNCOMMENT WHEN CONTENT IS READY -->
-                        <!-- <ul class="tile-items">
+                  <div class="content">
+                     <div class="coming-soon-content">
+                        <img src="images/png/clock@2x.png" id="coming-soon-icon" class="tile-heading-icon"
+                           alt="coming-soon-icon">
+                     </div>
+                     <p id="coming-soon-text">Coming Soon...</p>
+                     <!-- UNCOMMENT WHEN CONTENT IS READY -->
+                     <!-- <ul class="tile-items">
                            <li id="first-bookmark" class="bookmarks"><a href="#">BOOKMARK</a>
                               <span class="ticker-name"> TBC</span>
                               <span class="price-change">+5544.06%</span>
@@ -162,32 +173,31 @@
                               <span class="price-change">+1522.87%</span>
                            </li>
                         </ul> -->
-                     </div>
                   </div>
-               </div>
-                  <div class="advertisement-space">
-                     <a href="#"><img src="./images/png/ad-space-300x250.jpg" alt="advertisement-photo" class="advertisement-image"></a>
-                  </div>
-
                </div>
             </div>
          </div>
       </div>
-      
-      <!--SECOND SECTION-->
-       <div class="second-section-container"></div> 
-      
-      <!--THIRD SECTION-->
-      <div class="third-section-container"></div> 
-
+      <div class="horizontal-scroll__item advertisement">
+      <div class="advertisement-space">
+         <a href="#"><img src="./images/png/ad-space-300x250.jpg" alt="advertisement-photo"
+               class="advertisement-image"></a>
+      </div>
+      </div>
    </div>
+   <!--SECOND SECTION-->
+   <div class="second-section-container"></div>
 
-   
+   <!--THIRD SECTION-->
+   <div class="third-section-container"></div>
 
 
-      <!-- END CONTENT-->
-      <!-- FOOTER-->
-      <div class="footer-container">
+
+
+
+   <!-- END CONTENT-->
+   <!-- FOOTER-->
+   <div class="footer-container">
       <footer>
          <div class="footer">
             <div class="logo-container footer-logo" href="index.html">
@@ -203,15 +213,15 @@
             <div class="copyright copyright-hidden">©2021 Bitcoin of Canada. All Rights Reserved</div>
          </div>
       </footer>
-      </div>
-      <!--END FOOTER-->
-      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      <script type="text/javascript" src="./assets/md5/js/mdb.min.js"></script>
-      <script type="text/javascript" src="./scripts/navbar.js"></script>
-      <script type="text/javascript" src="./scripts/data-tables.js"></script>
-      <!-- SOCIAL MEDIA LINKS -->
-      <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid= ra-61c0e90e4173bb9f"></script>
+   </div>
+   <!--END FOOTER-->
+   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script type="text/javascript" src="./assets/md5/js/mdb.min.js"></script>
+   <script type="text/javascript" src="./scripts/navbar.js"></script>
+   <script type="text/javascript" src="./scripts/data-tables.js"></script>
+   <!-- SOCIAL MEDIA LINKS -->
+   <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid= ra-61c0e90e4173bb9f"></script>
 
-   </body>
+</body>
+
 </html>
-

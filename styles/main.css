@@ -9,32 +9,34 @@ body {
   overflow-x: hidden;
 }
 
-.wrapper {
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-}
-
-.first-section-container {
+.container {
   display: flex;
   padding: 2em 2em 2em 6em;
   background-color: var(--grey-1);
+  width: 100%;
+  max-width: calc(100% - 20px);
+  margin: auto;
 }
 
 .main-heading {
   font-size: var(--h1-font-size);
   font-weight: var(--heavy-font-weight);
   white-space: nowrap;
+  display: block;
+}
+
+.advertisement {
+  display: block;
 }
 
 .advertisement-space-mobile {
   display: none;
 }
-
-.advertisement-space {
-  display:block;
+.advertisement {
+  max-width: 100%;
+  padding-left: 2em;
+  padding-bottom:1em;
 }
-
 .advertisement-image {
   width: 300px;
   height: 250px;
@@ -43,21 +45,11 @@ body {
 .scroll-container {
   padding-top: 2em;
   padding-bottom: 2em;
-  position: relative;
-  right: 34em;
-}
-
-.tile-container {
-  padding-top: 2rem;
-}
-
-.tile-heading-icon {
-  height: 21px;
-  width: 22px;
+  max-width: 100%;
 }
 
 .top-border {
-  height: 2rem;
+  height: 3rem;
   width: 100%;
   background: var(--gradient-color);
 }
@@ -67,23 +59,40 @@ body {
   color: #fff;
   font-weight: var(--heavy-font-weight);
   font-size: var(--h2-font-size);
+  white-space: nowrap;
 }
 
 .horizontal-scroll {
   display: flex;
   gap: 5em;
+  width: 100%;
+  max-width: 100%;
 }
 
 .horizontal-scroll__item {
   display: flex;
-  flex: 0 0 20vw;
+  width: 20vw;
+}
+
+.content {
   background-color: #fff;
-  height: 10rem;
-  white-space: nowrap;
+}
+
+.tile-container {
+  padding-top: 2rem;
+}
+
+.tile-heading-icon {
+  height: 21px;
+  width: 20px;
+  padding-top: 3px;
+  vertical-align: text-top;
 }
 
 .tile-items {
-  padding-left: 2px;
+  padding-left: 5px;
+  padding-top:2px;
+  white-space: nowrap;
 }
 
 .preformers,
@@ -92,7 +101,7 @@ body {
   list-style-type: none;
   padding-bottom: 2em;
   font-weight: var(--heavy-font-weight);
-  font-size: var(--h2-font-size);
+  font-size: var(--p1-font-size);
 }
 
 li a li a,
@@ -154,7 +163,7 @@ li a:hover,
   font-weight: var(--heavy-font-weight);
   padding-right: 1em;
   padding-left: 10px;
-  float: right;
+  float:right;
 }
 
 #coming-soon-icon {
@@ -167,7 +176,7 @@ li a:hover,
 .coming-soon-content {
   display: flex;
   justify-content: center;
-  padding-top: 1em;
+  padding-top: .1em;
   padding-bottom: 1em;
 }
 #coming-soon-text {
@@ -181,7 +190,6 @@ li a:hover,
 
 .second-section-container {
   display: flex;
-  flex-direction: column;
   background-color: #fff;
   padding: 2em 2em 2em 4em;
 }
@@ -190,19 +198,23 @@ li a:hover,
 
 .third-section-container {
   display: flex;
-  flex-direction: column;
   background-color: var(--light-blue);
   padding: 2em 2em 2em 4em;
 }
 
 /*MOBILE DEVICES*/
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1312px) {
   /*FIRST SECTION*/
 
-  .first-section-container {
+  .navbar > .container-fluid {
+    flex-wrap: nowrap;
+  }
+
+  .container {
     flex-direction: column;
     align-items: center;
+    padding-left: 3em;
   }
 
   .main-heading {
@@ -211,11 +223,17 @@ li a:hover,
     text-align: center;
     width: 300px;
   }
-  .advertisement-space {
-    display: none;
+
+  .advertisement-space,
+  .advertisement {
+    display: none !important;
   }
+
   .advertisement-space-mobile {
     display: block;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    padding-left: 0.5em;
   }
   .advertisement-image {
     width: 300px;
@@ -237,12 +255,15 @@ li a:hover,
     scrollbar-width: none !important;
     -ms-overflow-style: none !important;
     width: 20rem;
+    max-width: 100%;
     overflow-y: hidden;
   }
 
   .horizontal-scroll__item {
     display: flex;
     flex: 0 0 20rem;
+    height: 10rem;
+    max-width: none;
   }
 
   .top-border-content {
@@ -289,12 +310,16 @@ li a:hover,
     padding-left: 30px;
   }
 
+  .price-change {
+    float: right;
+  }
+
+  /*COMING SOON TILE*/
+
   #coming-soon-icon {
     height: 45px;
     width: 45px;
   }
-
-  /*COMING SOON TILE*/
 
   .coming-soon-content {
     display: flex;
@@ -310,17 +335,14 @@ li a:hover,
 }
 
 
+@media screen and (max-width: 1496px) and (min-width: 1312px) {
+  .horizontal-scroll{
+    gap:1em;
+  }
 
-@media screen and (max-width:1800px) and (min-width: 1200px) {
-.horizontal-scroll__item {
-  flex: 0 0 20rem;
-}
-.preformers,
-.trending,
-.bookmarks {
-  font-size: var(--h3-font-size);
-}
+  .ticker-name{
+    display:none;
+  }
 
-
-    
+  
 }
