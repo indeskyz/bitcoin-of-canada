@@ -339,10 +339,13 @@ li a:hover,
   .horizontal-scroll{
     gap:1em;
   }
-
   .ticker-name{
     display:none;
   }
+}
 
-  
+@media screen and (min-width:1935px){
+  .advertisement{
+    padding-left:10rem;
+  }
 }
