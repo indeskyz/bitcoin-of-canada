@@ -9,17 +9,23 @@ body {
   overflow-x: hidden;
 }
 
+.mobile-only{
+  display:none !important;
+}
+
 .wrapper {
-  padding: 2em 2em 2em 6em;
+  padding: 2em 2em 2em 4em;
   background-color: var(--grey-1);
 }
 
 .container {
   display: flex;
+  justify-content:center;
   padding: 2em 2em 2em 2em;
   width: 100%;
   max-width: calc(100% - 20px);
   margin: auto;
+  flex-wrap: wrap;
 }
 
 .main-heading {
@@ -29,8 +35,13 @@ body {
   display: block;
 }
 
-.advertisement {
-  display: block;
+.advertisement-space {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  position: relative;
+  bottom: 7rem;
 }
 
 .advertisement-space-mobile {
@@ -71,11 +82,14 @@ body {
   gap: 2em;
   width: 100%;
   max-width: 100%;
+  flex-wrap: wrap;
+  flex: 1;
 }
 
 .horizontal-scroll__item {
   display: flex;
   width: 20vw;
+  flex: 1 content;
 }
 
 .content {
@@ -194,8 +208,7 @@ li a:hover,
 
 .chart-container {
   display: flex;
-  padding-left: 2em;
-  padding-right:2em;
+  width: 100%;
 }
 
 /*SECOND SECTION*/
@@ -216,7 +229,7 @@ li a:hover,
 
 /*MOBILE DEVICES*/
 
-@media screen and (max-width: 1312px) {
+@media screen and (max-width: 1200px) {
   /*FIRST SECTION*/
 
   .navbar > .container-fluid {
@@ -270,6 +283,7 @@ li a:hover,
     width: 20rem;
     max-width: 100%;
     overflow-y: hidden;
+    flex-wrap: nowrap;
   }
 
   .horizontal-scroll__item {
@@ -347,12 +361,17 @@ li a:hover,
   .chart-container {
     padding-left:0px;
     padding-right: 3em;
+    padding-top:3em;
+  }
+
+  .mobile-only{
+    display:none !important;
   }
 
   /*SECOND SECTION*/
 }
 
-@media screen and (max-width: 1496px) and (min-width: 1312px) {
+@media screen and (max-width: 1499px) and (min-width: 1200px) {
   .horizontal-scroll {
     gap: 1em;
   }
@@ -361,8 +380,9 @@ li a:hover,
   }
 }
 
-@media screen and (min-width: 1935px) {
-  .advertisement {
-    padding-left: 10rem;
+@media screen and (max-width:588px) {
+  .container {
+    flex-wrap:nowrap;
   }
+  
 }
