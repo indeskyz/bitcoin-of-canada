@@ -9,8 +9,8 @@ body {
   overflow-x: hidden;
 }
 
-.mobile-only{
-  display:none !important;
+.mobile-only {
+  display: none !important;
 }
 
 .wrapper {
@@ -18,17 +18,12 @@ body {
   background-color: var(--grey-1);
 }
 
-.container {
-  display: flex;
-  justify-content:center;
+.first-section-container {
   padding: 2em 2em 2em 2em;
-  width: 100%;
-  max-width: calc(100% - 20px);
-  margin: auto;
-  flex-wrap: wrap;
 }
 
-.main-heading {
+.main-heading,
+.news-heading {
   font-size: var(--h1-font-size);
   font-weight: var(--heavy-font-weight);
   white-space: nowrap;
@@ -47,21 +42,15 @@ body {
 .advertisement-space-mobile {
   display: none;
 }
-.advertisement {
-  max-width: 100%;
-  padding-left: 2em;
-  padding-bottom: 1em;
-}
 
 .advertisement-image {
-  width: 300px;
-  height: 250px;
+  max-width: 100%;
+  height: auto;
 }
 
-.scroll-container {
-  padding-top: 2em;
-  padding-bottom: 2em;
-  max-width: 100%;
+.advertisement {
+  position: relative;
+  bottom: 2.1rem;
 }
 
 .top-border {
@@ -81,15 +70,11 @@ body {
 .horizontal-scroll {
   display: flex;
   gap: 2em;
-  width: 100%;
-  max-width: 100%;
-  flex-wrap: wrap;
-  flex: 1;
+  flex-wrap: nowrap;
 }
 
 .horizontal-scroll__item {
-  display: flex;
-  width: 20vw;
+  flex: 1 0 calc(25% - 10px);
 }
 
 .content {
@@ -97,7 +82,7 @@ body {
 }
 
 .tile-container {
-  padding-top: 2rem;
+  padding-top: 5rem;
 }
 
 .tile-heading-icon {
@@ -171,8 +156,8 @@ li a:hover,
   padding-left: 30px;
 }
 
-.list-container{
-  display:inline;
+.list-container {
+  display: inline;
 }
 
 .ticker-name {
@@ -188,13 +173,11 @@ li a:hover,
   float: right;
 }
 
+/*COMING SOON TILE*/
 #coming-soon-icon {
   height: 45px;
   width: 45px;
 }
-
-/*COMING SOON TILE*/
-
 .coming-soon-content {
   display: flex;
   justify-content: center;
@@ -209,54 +192,58 @@ li a:hover,
 }
 
 /*CHART CONTAINER*/
-
 .chart-container {
   display: flex;
   width: 100%;
 }
-
-.view-all-button{
-  display:flex;
+.view-all-button {
+  display: flex;
   justify-content: center;
 }
 
-
-
+/*****************
+****************
+*****************/
 /*SECOND SECTION*/
 
 .second-section-container {
-  display: flex;
   background-color: #fff;
   padding: 2em 2em 2em 4em;
 }
 
+/*****************
+****************
+*****************/
 /*THIRD SECTION*/
 
 .third-section-container {
-  display: flex;
   background-color: var(--light-blue);
   padding: 2em 2em 2em 4em;
 }
 
+/*****************
+****************
+*****************/
 /*MOBILE DEVICES*/
 
-
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 998px) {
   /*FIRST SECTION*/
 
-  .container {
+  .first-section-container {
+    display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
     padding-left: 3em;
-    padding-right:6em;
+    padding-right: 6em;
   }
 
   .main-heading {
     font-size: var(--h1-font-size-mobile);
     white-space: normal;
     text-align: center;
-    width: 300px;
-    padding-left:10px;
+    max-width: 300px;
+    padding-left: 10px;
   }
 
   .advertisement-space,
@@ -273,10 +260,6 @@ li a:hover,
   .advertisement-image {
     width: 300px;
     height: 50px;
-  }
-
-  .scroll-container {
-    max-width: none;
   }
 
   .horizontal-scroll::-webkit-scrollbar {
@@ -368,36 +351,57 @@ li a:hover,
   }
 
   .chart-container {
-    padding-left:0px;
+    padding-left: 0px;
     padding-right: 3em;
-    padding-top:3em;
+    padding-top: 3em;
   }
 
-  .mobile-only{
-    display:none !important;
+  .mobile-only {
+    display: none !important;
   }
 
+  /*****************
+  ****************
+  *****************/
   /*SECOND SECTION*/
-}
 
-@media screen and (max-width: 1200px) and (min-width: 998px){
-  .tradingview-widget-container{
-    width:25vw !important;
+  .second-section-container {
+    display: flex;
+    flex-direction: column;
   }
+
+  .news-heading {
+    font-size: var(--h1-font-size-mobile);
+    white-space: normal;
+    text-align: center;
+  }
+
+  /*****************
+  ****************
+  *****************/
+  /*THIRD SECTION*/
 }
 
-@media screen and (max-width: 1499px) and (min-width: 1200px) {
+@media screen and (max-width: 1499px) and (min-width: 998px) {
   .horizontal-scroll {
     gap: 1em;
   }
-  .ticker-name{
+  .ticker-name {
     display: none;
   }
-}
-
-@media screen and (max-width:588px) {
-  .container {
-    flex-wrap:nowrap;
+  .price-change {
+    font-size: var(--small-font-size);
   }
 }
 
+@media screen and (max-width: 1005px) and (min-width: 998px) {
+  .price-change {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 588px) {
+  .first-section-container {
+    flex-wrap: nowrap;
+  }
+}
