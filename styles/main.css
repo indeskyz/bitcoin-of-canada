@@ -237,10 +237,6 @@ li a:hover,
 @media screen and (max-width: 1200px) {
   /*FIRST SECTION*/
 
-  .navbar > .container-fluid {
-    flex-wrap: nowrap;
-  }
-
   .container {
     flex-direction: column;
     align-items: center;
