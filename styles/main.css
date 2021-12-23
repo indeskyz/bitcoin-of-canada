@@ -215,6 +215,13 @@ li a:hover,
   width: 100%;
 }
 
+.view-all-button{
+  display:flex;
+  justify-content: center;
+}
+
+
+
 /*SECOND SECTION*/
 
 .second-section-container {
@@ -233,6 +240,7 @@ li a:hover,
 
 /*MOBILE DEVICES*/
 
+
 @media screen and (max-width: 1200px) {
   /*FIRST SECTION*/
 
@@ -248,6 +256,7 @@ li a:hover,
     white-space: normal;
     text-align: center;
     width: 300px;
+    padding-left:10px;
   }
 
   .advertisement-space,
@@ -369,6 +378,12 @@ li a:hover,
   }
 
   /*SECOND SECTION*/
+}
+
+@media screen and (max-width: 1200px) and (min-width: 998px){
+  .tradingview-widget-container{
+    width:25vw !important;
+  }
 }
 
 @media screen and (max-width: 1499px) and (min-width: 1200px) {

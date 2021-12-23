@@ -23,6 +23,7 @@
    <link rel="stylesheet" href="./styles/globals.css" />
    <link rel="stylesheet" href="./styles/footer.css" />
    <link rel="stylesheet" href="./styles/main.css" />
+   <link rel="stylesheet" href="./styles/boc-links-buttons.css" />
 </head>
 
 <body>
@@ -48,16 +49,16 @@
             <!-- Left links -->
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 navigation-links">
                <li class="nav-item">
-                  <a class="nav-link" href="#">Crypto Prices</a>
+                  <a class="nav-link" href="crypto-prices.html">Crypto Prices</a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link" href="#">Exchanges</a>
+                  <a class="nav-link" href="exchanges.html">Exchanges</a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link" href="#">Crypto News</a>
+                  <a class="nav-link" href="crypto-news.html">Crypto News</a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link" href="#">Social Trends</a>
+                  <a class="nav-link" href="social-trends.html">Social Trends</a>
                </li>
                <!-- Right elements -->
                <div class="d-flex align-items-center icons-container">
@@ -154,13 +155,13 @@
                            src="./images/png/wishlist@2x.png" alt="bookmarks-icon" loading="lazy"><img>
                         My Watchlist</div>
                      <div class="content">
-                         <div class="coming-soon-content">
+                        <div class="coming-soon-content">
                            <img src="images/png/clock@2x.png" id="coming-soon-icon" class="tile-heading-icon"
                               alt="coming-soon-icon">
-                        </div> 
+                        </div>
                         <p id="coming-soon-text">Coming Soon...</p>
                         <!--UNCOMMENT WHEN CONTENT IS READY -->
-                         <!-- <ul class="tile-items">
+                        <!-- <ul class="tile-items">
                            <li id="first-bookmark" class="bookmarks"><a href="#">BOOKMARK</a>
                               <span class="ticker-name"> TBC</span>
                               <span class="price-change">+5544.06%</span>
@@ -178,35 +179,35 @@
                   </div>
                </div>
                <div class="horizontal-scroll__item advertisement">
-               <div class="advertisement-space">
-                  <a href="#"><img src="./images/png/ad-space-300x250.jpg" alt="advertisement-photo"
-                        class="advertisement-image"></a>
-               </div>
+                  <div class="advertisement-space">
+                     <a href="#"><img src="./images/png/ad-space-300x250.jpg" alt="advertisement-photo"
+                           class="advertisement-image"></a>
+                  </div>
                </div>
             </div>
-               <div class="chart-container desktop">
-                  <!-- TradingView Widget BEGIN -->
-                  <div class="tradingview-widget-container">
-                     <div class="tradingview-widget-container__widget"></div>
-                     <div class="tradingview-widget-copyright"><a
-                           href="https://www.tradingview.com/markets/cryptocurrencies/prices-all/" rel="noopener"
-                           target="_blank"><span class="blue-text">Cryptocurrency Markets</span></a> by TradingView
-                     </div>
-                     <script type="text/javascript"
-                        src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js" async>
-                           {
-                              "width": "100%",
-                                 "height": "490",
-                                    "defaultColumn": "overview",
-                                       "screener_type": "crypto_mkt",
-                                          "displayCurrency": "USD",
-                                             "colorTheme": "light",
-                                                "locale": "en"
-                           }
-                        </script>
-                  </div>
-                  <!-- TradingView Widget END -->
+            <div class="chart-container desktop">
+               <!-- TradingView Widget BEGIN -->
+               <div class="tradingview-widget-container">
+                  <div class="tradingview-widget-container__widget"></div>
+                  <div class="tradingview-widget-copyright"><a
+                        href="https://www.tradingview.com/markets/cryptocurrencies/prices-all/" rel="noopener"
+                        target="_blank"><span class="blue-text">Cryptocurrency Markets</span></a> by TradingView</div>
+                  <script type="text/javascript"
+                     src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js" async>
+                        {
+                           "width": "100%",
+                              "height": 500,
+                                 "defaultColumn": "performance",
+                                    "screener_type": "crypto_mkt",
+                                       "displayCurrency": "USD",
+                                          "colorTheme": "light",
+                                             "locale": "en"
+                        }
+                     </script>
                </div>
+               <!-- TradingView Widget END -->
+            </div>
+               <div class="view-all-button"><a href="exchanges.html" role="button" class="btn btn-secondary btn-large btn-rounded boc-button">View all coin prices</a></div>
          </div>
 
       </div>
@@ -231,10 +232,10 @@
                   class="logo-image" id="brand-logo" />
                <div class="copyright">©2021 Bitcoin of Canada. All Rights Reserved</div>
             </div>
-            <div class="item-1"><a href="#">Crypto Prices</a></div>
-            <div class="item-2"><a href="#">Exchanges</a></div>
-            <div class="item-3"><a href="#">Crypto News</a></div>
-            <div class="item-4"><a href="#">Social Trends</a></div>
+            <div class="item-1"><a href="crypto-prices.html">Crypto Prices</a></div>
+            <div class="item-2"><a href="exchanges.html">Exchanges</a></div>
+            <div class="item-3"><a href="crypto-news.html">Crypto News</a></div>
+            <div class="item-4"><a href="social-trends.html">Social Trends</a></div>
             <a class="share-bttn share" href="#">Share this page</a>
             <div class="copyright copyright-hidden">©2021 Bitcoin of Canada. All Rights Reserved</div>
          </div>
@@ -245,6 +246,7 @@
    <script type="text/javascript" src="./assets/md5/js/mdb.min.js"></script>
    <script type="text/javascript" src="./scripts/navbar.js"></script>
    <script type="text/javascript" src="./scripts/data-tables.js"></script>
+   <script type="text/javascript" src="./scripts/crypto-chart.js"></script>
    <!-- SOCIAL MEDIA LINKS -->
    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid= ra-61c0e90e4173bb9f"></script>
 

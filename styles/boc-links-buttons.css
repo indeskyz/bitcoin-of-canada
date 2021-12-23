@@ -1,0 +1,13 @@
+@import url("./globals.css");
+
+.boc-button{
+  background-color: var(--cta-link-color);
+  font-weight: var(--med-font-weight);
+  font-size: var(--p1-font-size);
+  text-transform: lowercase;
+  padding: 0.62rem 1.5rem 0.5rem;
+}
+
+.boc-button:hover{
+    background-color: var(--cta-link-hover-color);
+}

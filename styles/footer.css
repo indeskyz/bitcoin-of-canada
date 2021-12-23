@@ -144,4 +144,9 @@ div.logo-container > img:nth-child(1) {
     margin-left:2em;
   }
 }
+@media screen and (max-width:340px) {
+  .footer-logo{
+    padding-right:18em;
+  }  
+}
 
