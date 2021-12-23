@@ -2,6 +2,8 @@
 
 .logo-container {
   padding-left: 3em;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .logo-image {
@@ -183,7 +185,14 @@
   .input-group{
     right:0;
   }
-  
+}
+
+@media screen and (max-width:340px) {
+  .logo-container{
+    height:3.5rem;
+    width:.5rem;
+    padding-right:10em;
+  }  
 }
 
 /*ANIMATIONS*/

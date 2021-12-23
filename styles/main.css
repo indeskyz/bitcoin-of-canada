@@ -90,7 +90,6 @@ body {
 .horizontal-scroll__item {
   display: flex;
   width: 20vw;
-  flex: 1 max-content;
 }
 
 .content {
@@ -377,7 +376,7 @@ li a:hover,
     gap: 1em;
   }
   .ticker-name{
-    display:none;
+    display: none;
   }
 }
 
@@ -385,5 +384,5 @@ li a:hover,
   .container {
     flex-wrap:nowrap;
   }
-  
 }
+
