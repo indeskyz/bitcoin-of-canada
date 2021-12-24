@@ -54,8 +54,6 @@ img {
 }
 
 .top-border {
-  height: 3rem;
-  width: 100%;
   background: var(--gradient-color);
 }
 
@@ -211,7 +209,7 @@ li a:hover,
   padding: 2em 2em 2em 4em;
 }
 
-.news-heading-container {
+.heading-container {
   display: flex;
   justify-content: space-between;
   padding-bottom: 2em;
@@ -292,7 +290,8 @@ li a:hover,
   color: var(--cta-link-hover-color);
 }
 
-.news-button {
+.news-button,
+.social-button {
   display: flex;
   justify-content: center;
 }
@@ -330,6 +329,57 @@ hr {
 .third-section-container {
   background-color: var(--light-blue);
   padding: 2em 2em 2em 4em;
+}
+
+.social-wrapper{
+  display:flex;
+  gap:2em;
+  justify-content: center;
+}
+
+.hashtag-table {
+  background-color: #fff;
+}
+
+.hashtags {
+  list-style-type: none;
+  font-weight: var(--heavy-font-weight);
+  font-size: var(--p1-font-size);
+  padding-left: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.hashtag-content {
+  background: url(../images/png/hashtag@2x.png) no-repeat left;
+  background-size: 25px 25px;
+  padding-left: 3em;
+  margin: 10px;
+}
+
+.trending-percentage {
+  float: right;
+}
+
+.social-header {
+  background: var(--gradient-color);
+  padding-left: 1em;
+  padding-right:1em;
+  color: #fff;
+  font-weight: var(--heavy-font-weight);
+  font-size: var(--h2-font-size);
+  white-space: nowrap;
+}
+
+.tweets{
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap:4em;
+}
+
+.social-button{
+  padding-top:3em;
 }
 
 /*****************
@@ -397,18 +447,13 @@ hr {
     padding-top: 2px;
   }
 
-  .top-border {
-    height: 2rem;
-    width: 100%;
-    background: var(--gradient-color);
-  }
-
   .content {
     padding-top: 1em;
   }
 
   .tile-container {
     padding-top: 0px;
+    margin-left:2em;
   }
 
   .tile-heading-icon {
@@ -463,8 +508,8 @@ hr {
     padding-top: 3em;
   }
 
-  .tradingview-widget-container{
-    margin-left:3em;
+  .tradingview-widget-container {
+    margin-left: 3em;
   }
 
   .mobile-only {
@@ -481,7 +526,7 @@ hr {
     flex-direction: column;
   }
 
-  .news-heading-container {
+  .heading-container {
     flex-direction: column;
   }
 
@@ -537,6 +582,20 @@ hr {
   ****************
   *****************/
   /*THIRD SECTION*/
+  .third-section-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .social-wrapper{
+    flex-direction: column;
+  }
+  
+  .tweets{
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
 }
 
 @media screen and (max-width: 1499px) and (min-width: 998px) {
