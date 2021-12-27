@@ -63,8 +63,8 @@ div.right-content > span:nth-child(1) {
 .news-container {
   display: flex;
   justify-content: space-around;
-  gap:1em;
-  padding-bottom:3em;
+  gap: 1em;
+  padding-bottom: 3em;
 }
 
 .second-section-container {
@@ -76,6 +76,17 @@ div.right-content > span:nth-child(1) {
   font-weight: var(--heavy-font-weight);
   font-size: var(--h2-font-size);
   max-width: 15vw;
+}
+
+/*****************
+****************
+*****************/
+/*THIRD SECTION*/
+
+.twitter-tweet {
+  flex: 1;
+  max-width: none !important;
+  width: 0px !important;
 }
 
 /*****************
@@ -119,11 +130,37 @@ div.right-content > span:nth-child(1) {
     font-size: var(--h2-font-size-mobile);
     max-width: none;
   }
+
+  /*THIRD SECTION*/
+    .twitter-tweet {
+    justify-content: center;
+    min-width: 100%;
+  }
+}
+
+@media screen and (max-width: 1390px) and (min-width: 998px) {
+  .twitter-tweet {
+    flex: 1 0 calc(100% / 3);
+  }
+}
+
+@media screen and (max-width: 998px) and (min-width: 900px) {
+    .tweets{
+        padding-left:6rem;
+    }
+}
+@media screen and (max-width: 899px) and (min-width: 800px) {
+    .tweets{
+        padding-left:2rem;
+    }
 }
 
 @media screen and (max-width: 506px) {
   /*FIRST SECTION*/
   .metrics-table-container {
     margin-left: 2.5rem;
+  }
+  .tweets {
+    padding-left: 0px;
   }
 }

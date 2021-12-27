@@ -9,7 +9,7 @@ body {
   overflow-x: hidden;
 }
 
-img:not(.logo-image) {
+img:not(.logo-image, .navbar-icon) {
   max-width: 100%;
   height: auto;
 }
