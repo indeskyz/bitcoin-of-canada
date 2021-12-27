@@ -1,0 +1,92 @@
+@import url("./globals.css");
+
+/*FIRST SECTION*/
+
+.nav-item:nth-child(1) {
+  text-decoration: underline;
+  text-decoration-color: var(--navbar-item-color);
+}
+
+.first-section-container {
+  background-color: #fff;
+  border: 0px solid transparent;
+  border-radius: 10px;
+}
+
+.data-items {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.data-container {
+  display: flex;
+  gap: 2em;
+}
+
+.tradingview-widget-container {
+  min-width: 50%;
+}
+
+.metrics-chart-container,
+.metrics-table-container {
+  flex: 1 0 calc(25% - 10px);
+}
+
+.vertical-seperator-mobile {
+  display: none;
+}
+
+.data-content {
+  font-weight: normal;
+}
+
+.right-content {
+  font-weight: var(--heavy-font-weight);
+}
+
+.price-difference {
+  float: right;
+  font-size: var(--small-font-size);
+  color: var(--green);
+}
+
+div.right-content > span:nth-child(1) {
+  display: block;
+}
+
+/*****************
+****************
+*****************/
+/*MOBILE DEVICES*/
+
+@media screen and (max-width: 998px) {
+  /*FIRST SECTION*/
+
+  .data-container {
+    flex-direction: column;
+  }
+
+  .metrics-chart-container{
+      margin-right:3rem;
+  }
+
+  .vertical-seperator {
+    display: none;
+  }
+
+  .vertical-seperator-mobile {
+    display: block;
+  }
+
+  .metrics-table-container {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 506px) {
+  /*FIRST SECTION*/
+  .metrics-table-container {
+    margin-left: 2.5rem;
+  }
+}

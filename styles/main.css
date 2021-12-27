@@ -9,7 +9,7 @@ body {
   overflow-x: hidden;
 }
 
-img {
+img:not(.logo-image) {
   max-width: 100%;
   height: auto;
 }
@@ -337,11 +337,12 @@ hr {
   justify-content: center;
 }
 
-.hashtag-table {
+.data-table {
   background-color: #fff;
+  margin-top:12px;
 }
 
-.hashtags {
+.data-items {
   list-style-type: none;
   font-weight: var(--heavy-font-weight);
   font-size: var(--p1-font-size);
@@ -357,7 +358,8 @@ hr {
   margin: 10px;
 }
 
-.trending-percentage {
+.trending-percentage, 
+.right-content{
   float: right;
 }
 
@@ -485,6 +487,17 @@ hr {
     float: right;
   }
 
+  .tile-heading-icon{
+    vertical-align: sub;
+  }
+  .social-header{
+    font-size: var(--h2-font-size-mobile);
+  }
+
+  .data-items{
+    font-size:14px;
+  }
+
   /*COMING SOON TILE*/
 
   #coming-soon-icon {
@@ -591,6 +604,10 @@ hr {
   .social-wrapper{
     flex-direction: column;
   }
+
+  .data-table{
+    margin-top:0px;
+  }
   
   .tweets{
     justify-content: space-evenly;
@@ -621,3 +638,12 @@ hr {
     flex-wrap: nowrap;
   }
 }
+
+@media screen and (max-width: 370px) {
+  .tweets {
+    position: relative;
+    right:2em;
+  }
+}
+
+
