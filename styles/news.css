@@ -6,6 +6,14 @@
   background-color: transparent;
 }
 
+.nav-item:nth-child(1){
+    text-decoration: none;
+}
+.nav-item:nth-child(3){
+    text-decoration: underline;
+    text-decoration-color: #fff;
+}
+
 /*****************
 ****************
 *****************/
