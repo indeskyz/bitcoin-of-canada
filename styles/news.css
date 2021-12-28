@@ -19,11 +19,20 @@
 *****************/
 /*FIRST SECTION*/
 
+.metrics-table-container{
+    flex:auto;
+    padding-right: 5em;
+    padding-left: 2.5em;
+}
+
+
 .data-items {
   gap: 1rem;
   flex-direction: row;
   justify-content: flex-start;
   flex-wrap: wrap;
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
 
 .trending-tag {
@@ -44,7 +53,7 @@
 
 .news-container {
   flex-wrap: wrap;
-  gap: 3em;
+  gap: 4em;
 }
 
 .page-item.active .page-link {

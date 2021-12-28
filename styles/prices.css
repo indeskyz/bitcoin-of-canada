@@ -78,6 +78,10 @@ div.right-content > span:nth-child(1) {
   max-width: 15vw;
 }
 
+.prices-article{
+  padding-top:1rem;
+}
+
 /*****************
 ****************
 *****************/

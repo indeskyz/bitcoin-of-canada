@@ -53,16 +53,13 @@ img:not(.logo-image, .navbar-icon, .nav-button) {
   bottom: 2.1rem;
 }
 
-.top-border {
-  background: var(--gradient-color);
-}
-
 .top-border-content {
   padding-left: 1em;
   color: #fff;
   font-weight: var(--heavy-font-weight);
   font-size: var(--h2-font-size);
   white-space: nowrap;
+  background-image: var(--gradient-color);
 }
 
 .horizontal-scroll {
@@ -237,6 +234,7 @@ li a:hover,
 .article-heading {
   font-size: var(--h1-font-size);
   font-weight: var(--heavy-font-weight);
+  padding-top:1rem;
   width: 20vw;
 }
 
@@ -366,7 +364,7 @@ hr {
 .social-header {
   background: var(--gradient-color);
   padding-left: 1em;
-  padding-right:1em;
+  padding-right:2em;
   color: #fff;
   font-weight: var(--heavy-font-weight);
   font-size: var(--h2-font-size);
@@ -643,6 +641,11 @@ hr {
   .tweets {
     position: relative;
     right:2em;
+  }
+}
+@media screen and (max-width: 370px) {
+  .trending-header{
+    font-size: 14px;
   }
 }
 
