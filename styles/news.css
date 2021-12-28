@@ -1,0 +1,117 @@
+@import url("./globals.css");
+
+.first-section-container,
+.second-section-container,
+.third-section-container {
+  background-color: transparent;
+}
+
+/*****************
+****************
+*****************/
+/*FIRST SECTION*/
+
+.data-items {
+  gap: 1rem;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.trending-tag {
+  background-color: var(--light-blue);
+  color: var(--cta-link-color);
+  font-size: 1.2em;
+}
+
+.trending-tag:hover {
+  color: #fff;
+  background-color: var(--cta-link-color);
+}
+
+/*****************
+****************
+*****************/
+/*SECOND SECTION*/
+
+.news-container {
+  flex-wrap: wrap;
+  gap: 3em;
+}
+
+.page-item.active .page-link {
+  background-color: var(--cta-link-color);
+  border: 0;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+
+.page-link {
+  font-size: var(--h2-font-size);
+  color: var(--cta-link-color);
+  font-weight: var(--heavy-font-weight);
+  border-radius:2rem;
+  display:initial;
+}
+
+.page-link:hover:not(.ellipsis){
+  background-color: var(--light-blue);
+  color: var(--cta-link-color);
+  border: 0;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+  transition: none !important;
+}
+
+
+.next-button:hover, 
+.previous-button:hover{
+  background-color: transparent !important;
+  box-shadow:none !important;
+  color: transparent !important;
+} 
+
+.nav-button{
+    height:35px;
+    width:35px;
+}
+
+/*****************
+****************
+*****************/
+/*MOBILE DEVICES*/
+
+@media screen and (max-width: 998px) {
+  /*FIRST SECTION*/
+  .data-content {
+    flex-basis: 21%;
+  }
+
+  .ad-image {
+    display: none;
+  }
+
+  .ad-image-mobile {
+    display: flex;
+    justify-content: center;
+    padding-right: 2em;
+  }
+
+  .mobile-only {
+    display: block !important;
+  }
+
+  .page-link{
+      font-size: var(--h2-font-size-mobile);
+  }
+
+  .pagination{
+      flex-wrap:wrap;
+      padding-right:2em;
+  }
+
+   .pagination li:nth-child(8),  
+   .pagination li:nth-child(7), 
+   .pagination li:nth-child(6) {
+      display:none;
+  }
+}
