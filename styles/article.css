@@ -58,18 +58,15 @@
   width: 100%;
 }
 
-.metrics-table-container{
-    padding-right:6em;
-}
-
-
-
-
-
 /*****************
 ****************
 *****************/
 /*SECOND SECTION*/
+
+.metrics-table-container{
+    padding-right:6em;
+}
+
 
 .related-articles {
   padding-top: 1em;

@@ -1,0 +1,120 @@
+@import url("./globals.css");
+
+.wrapper {
+  background-color: #fff;
+}
+
+.nav-item:nth-child(1) {
+  text-decoration: none;
+}
+.nav-item:nth-child(3) {
+  text-decoration: none;
+}
+
+/*****************
+****************
+*****************/
+/*FIRST SECTION*/
+
+.search-heading,
+.left-content-heading {
+  font-weight: var(--heavy-font-weight);
+}
+
+.search-heading {
+  font-size: var(--h1-font-size);
+  padding-left: 1em;
+}
+
+.left-content-heading {
+  font-size: var(--h2-font-size);
+}
+#search-query {
+  font-weight: normal;
+}
+
+.article-section {
+  padding-right: 10rem;
+}
+
+.data-table {
+  padding-left: 2em;
+}
+
+.data-items {
+  flex-direction: column;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  min-width: 50vw;
+}
+
+.data-content {
+  font-weight: var(--heavy-font-weight);
+  font-size: var(--h3-font-size);
+}
+
+.data-content-light {
+  font-weight: normal;
+  font-size: var(--p2-font-size);
+  text-transform: uppercase;
+}
+
+.data-content:nth-child(1) {
+  background: url(../images/coins/sushswap-logo.png) no-repeat left;
+}
+.data-content:nth-child(2) {
+  background: url(../images/coins/sushi-up-logo.png) no-repeat
+    left;
+}
+.data-content:nth-child(3) {
+  background: url(../images/coins/xsushi-logo.webp) no-repeat
+    left;
+}
+.data-content:nth-child(4) {
+  background: url(../images/coins/sushilong-logo.png) no-repeat
+    left;
+}
+.data-content:nth-child(5) {
+  background: url(../images/coins/sushilong-logo.png) no-repeat
+    left;
+}
+.data-content:nth-child(6) {
+  background: url(../images/coins/wansushi-logo.jpg) no-repeat
+    left;
+}
+.data-content:nth-child(7) {
+  background: url(../images/coins/sushiba-logo.png) no-repeat
+    left;
+}
+.data-content:nth-child(8) {
+  background: url(../images/coins/sushi-up-logo.png) no-repeat
+    left;
+}
+
+.data-content {
+  background-size: 25px 25px !important;
+  padding-left: 3em;
+  margin: 10px;
+}
+
+.related-articles {
+  padding-top: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+/*****************
+****************
+*****************/
+/*MOBILE DEVICES*/
+
+@media screen and (max-width: 998px) {
+  /*FIRST SECTION*/
+  .search-heading {
+    font-size: var(--h1-font-size-mobile);
+  }
+  .left-content-heading {
+    font-size: var(--h2-font-size-mobile);
+  }
+}
