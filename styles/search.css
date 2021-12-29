@@ -113,7 +113,7 @@
   }
   
   .left-content-heading {
-    font-size: var(--h2-font-size-mobile);
+      display:none;
   }
   
   .mobile-search-bar {
