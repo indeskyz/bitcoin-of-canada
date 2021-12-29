@@ -63,32 +63,25 @@
   background: url(../images/coins/sushswap-logo.png) no-repeat left;
 }
 .data-content:nth-child(2) {
-  background: url(../images/coins/sushi-up-logo.png) no-repeat
-    left;
+  background: url(../images/coins/sushi-up-logo.png) no-repeat left;
 }
 .data-content:nth-child(3) {
-  background: url(../images/coins/xsushi-logo.webp) no-repeat
-    left;
+  background: url(../images/coins/xsushi-logo.webp) no-repeat left;
 }
 .data-content:nth-child(4) {
-  background: url(../images/coins/sushilong-logo.png) no-repeat
-    left;
+  background: url(../images/coins/sushilong-logo.png) no-repeat left;
 }
 .data-content:nth-child(5) {
-  background: url(../images/coins/sushilong-logo.png) no-repeat
-    left;
+  background: url(../images/coins/sushilong-logo.png) no-repeat left;
 }
 .data-content:nth-child(6) {
-  background: url(../images/coins/wansushi-logo.jpg) no-repeat
-    left;
+  background: url(../images/coins/wansushi-logo.jpg) no-repeat left;
 }
 .data-content:nth-child(7) {
-  background: url(../images/coins/sushiba-logo.png) no-repeat
-    left;
+  background: url(../images/coins/sushiba-logo.png) no-repeat left;
 }
 .data-content:nth-child(8) {
-  background: url(../images/coins/sushi-up-logo.png) no-repeat
-    left;
+  background: url(../images/coins/sushi-up-logo.png) no-repeat left;
 }
 
 .data-content {
@@ -104,6 +97,10 @@
   gap: 2em;
 }
 
+.mobile-search-bar{
+    display:none;
+}
+
 /*****************
 ****************
 *****************/
@@ -114,7 +111,48 @@
   .search-heading {
     font-size: var(--h1-font-size-mobile);
   }
+  
   .left-content-heading {
     font-size: var(--h2-font-size-mobile);
   }
+  
+  .mobile-search-bar {
+    display:flex;
+    padding-bottom: 2em;
+  }
+    
+  .search-input-mobile {
+    text-transform: lowercase;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background-color: var(--grey-1);
+    padding-left: 3rem;
+    padding-right:2em;
+    height: 2em;
+    min-width:50vw;
+    margin-right:3em;
+  }
+
+  #search-form-icon-mobile {
+    position: relative;
+    left: 3em;
+    z-index: 100;
+    background-image: url(../images/png/search-dark@2x.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: 1.3rem;
+    border: none;
+    width: 2.438rem;
+    top: 0.2rem;
+  }
+
+  .search-button{
+      text-transform: capitalize !important;
+      position:relative;
+      bottom:.5em;
+      min-width:30%;
+      display:flex;
+      justify-content: center;
+  }
+
 }

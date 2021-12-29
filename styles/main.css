@@ -9,6 +9,12 @@ body {
   overflow-x: hidden;
 }
 
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
 img:not(.logo-image, .navbar-icon, .nav-button) {
   max-width: 100%;
   height: auto;
@@ -234,7 +240,7 @@ li a:hover,
 .article-heading {
   font-size: var(--h1-font-size);
   font-weight: var(--heavy-font-weight);
-  padding-top:1rem;
+  padding-top: 1rem;
   width: 20vw;
 }
 
@@ -329,15 +335,15 @@ hr {
   padding: 2em 2em 2em 4em;
 }
 
-.social-wrapper{
-  display:flex;
-  gap:2em;
+.social-wrapper {
+  display: flex;
+  gap: 2em;
   justify-content: center;
 }
 
 .data-table {
   background-color: #fff;
-  margin-top:12px;
+  margin-top: 12px;
 }
 
 .data-items {
@@ -356,30 +362,30 @@ hr {
   margin: 10px;
 }
 
-.trending-percentage, 
-.right-content{
+.trending-percentage,
+.right-content {
   float: right;
 }
 
 .social-header {
   background: var(--gradient-color);
   padding-left: 1em;
-  padding-right:2em;
+  padding-right: 2em;
   color: #fff;
   font-weight: var(--heavy-font-weight);
   font-size: var(--h2-font-size);
   white-space: nowrap;
 }
 
-.tweets{
-  display:flex;
+.tweets {
+  display: flex;
   justify-content: start;
   flex-wrap: wrap;
-  gap:4em;
+  gap: 4em;
 }
 
-.social-button{
-  padding-top:3em;
+.social-button {
+  padding-top: 3em;
 }
 
 /*****************
@@ -453,7 +459,7 @@ hr {
 
   .tile-container {
     padding-top: 0px;
-    margin-left:2em;
+    margin-left: 2em;
   }
 
   .tile-heading-icon {
@@ -485,15 +491,15 @@ hr {
     float: right;
   }
 
-  .tile-heading-icon{
+  .tile-heading-icon {
     vertical-align: sub;
   }
-  .social-header{
+  .social-header {
     font-size: var(--h2-font-size-mobile);
   }
 
-  .data-items{
-    font-size:14px;
+  .data-items {
+    font-size: 14px;
   }
 
   /*COMING SOON TILE*/
@@ -599,15 +605,15 @@ hr {
     justify-content: center;
   }
 
-  .social-wrapper{
+  .social-wrapper {
     flex-direction: column;
   }
 
-  .data-table{
-    margin-top:0px;
+  .data-table {
+    margin-top: 0px;
   }
-  
-  .tweets{
+
+  .tweets {
     justify-content: space-evenly;
     flex-wrap: wrap;
   }
@@ -640,13 +646,11 @@ hr {
 @media screen and (max-width: 370px) {
   .tweets {
     position: relative;
-    right:2em;
+    right: 2em;
   }
 }
 @media screen and (max-width: 370px) {
-  .trending-header{
+  .trending-header {
     font-size: 14px;
   }
 }
-
-

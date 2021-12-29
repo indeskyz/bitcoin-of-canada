@@ -51,6 +51,11 @@
 *****************/
 /*SECOND SECTION*/
 
+.second-section-container{
+  padding: 2em 2em 2em 2em;
+}
+
+
 .news-container {
   flex-wrap: wrap;
   gap: 4em;
