@@ -1,0 +1,167 @@
+@import url("./globals.css");
+
+.wrapper,
+.first-section-container,
+.second-section-container,
+.third-section-container {
+  background-color: var(--light-blue);
+}
+
+.nav-item:nth-child(1),
+.nav-item:nth-child(3){
+    text-decoration: none;
+}
+.nav-item:nth-child(4){
+    text-decoration: underline;
+    text-decoration-color: #fff;
+}
+
+/*****************
+****************
+*****************/
+/*FIRST SECTION*/
+
+.horizontal-scroll{
+    flex-wrap: wrap;
+}
+
+
+.horizontal-scroll__item {
+  flex: 1 0 calc(10% - 10px);
+}
+.horizontal-scroll__item.tile-1 .top-border,
+.horizontal-scroll__item.tile-2 .top-border,
+.horizontal-scroll__item.tile-3 .top-border,
+.horizontal-scroll__item.tile-4 .top-border,
+.horizontal-scroll__item.tile-5 .top-border,
+.horizontal-scroll__item.tile-6 .top-border {
+
+}
+
+.content{
+    border-top: .5rem solid var(--blue);
+    
+}
+
+.tile-items{
+    list-style: none;
+}
+
+
+.tile-data, 
+.tile-data-right-content, 
+.data-tile-heading{
+    padding-left:1em;
+    padding-right:1em;
+}
+
+.data-tile-heading{
+    font-size: var(--h2-font-size);
+    font-weight: var(--med-font-weight);
+    color: var(--blue);
+}
+
+.tile-data{
+    font-size: var(--h2-font-size);
+    font-weight: var(--med-font-weight);
+    color: black;
+}
+
+.tile-data-right-content{
+    float:right;
+    font-size: var(--p1-font-size);
+    font-weight:var(--heavy-font-weight);
+    color: var(--green);
+}
+
+.horizontal-scroll__item.tile-4 .tile-data{
+  background: url(https://www.meme-arsenal.com/memes/688700b41a939acf4cad09e9c84bcff6.jpg) no-repeat left;
+  background-size: 45px !important;
+  padding-left: 3rem !important;
+  font-weight: var(--med-font-weight);
+}
+
+.ticker-name{
+    font-size: var(--p1-font-size);
+    margin-left:3em;
+}
+
+.horizontal-scroll__item.tile-6 .tile-data-right-content {
+    color: var(--red);
+}
+
+.data-items{
+    display:flex;
+    flex-direction: column;
+    max-height:18em;
+    flex-wrap:wrap;
+    padding-bottom:1rem;
+    padding-top:1rem;
+}
+
+.trending-accounts, .trending-hashtags{
+    gap:1em;
+}
+
+.trending-accounts{
+    padding-bottom:.8em;
+}
+
+.hashtag-content, .data-content{
+    padding-left:2em;
+}
+
+.trending-percentage{
+    color:var(--cta-link-color);
+}
+
+.trending-percentage,
+.right-content {
+  float: right;
+  padding-right: 2em;
+}
+
+
+.trending-accounts .data-content:before {
+  content: '\0040';
+  color: var(--cta-link-color);
+  font-weight:var(--heavy-font-weight);
+}
+
+.trending-accounts-link{
+    color: var(--cta-link-color);
+}
+
+
+
+/*****************
+****************
+*****************/
+/*SECOND SECTION*/
+
+/*****************
+****************
+*****************/
+/*MOBILE DEVICES*/
+
+@media screen and (max-width: 998px) {
+  /*FIRST SECTION*/
+    .horizontal-scroll{
+    flex-wrap: nowrap;
+    }
+    .tile-data-heading, .tile-data{
+        font-size:var(--h2-font-size-mobile);
+    }
+    .ticker-name{
+        display:none;
+    }
+
+}
+
+@media screen and (max-width: 1820px) and (min-width:998px) {
+  /*FIRST SECTION*/
+
+  .tile-data-right-content{
+      float:none;
+  }
+}
