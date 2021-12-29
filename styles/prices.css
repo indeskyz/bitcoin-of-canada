@@ -60,6 +60,10 @@ div.right-content > span:nth-child(1) {
 *****************/
 /*SECOND SECTION*/
 
+.second-section-container{
+  background-color:var(--grey-1);
+}
+
 .news-container {
   display: flex;
   justify-content: space-around;
@@ -67,9 +71,6 @@ div.right-content > span:nth-child(1) {
   padding-bottom: 3em;
 }
 
-.second-section-container {
-  background-color: #fff;
-}
 
 .article-heading-link {
   display: block;

@@ -1,0 +1,65 @@
+@import url("./globals.css");
+
+.nav-item:nth-child(2) {
+  text-decoration: underline;
+  text-decoration-color: var(--navbar-item-color);
+}
+
+.nav-item:nth-child(3){
+    text-decoration: none;
+}
+
+.tile-container{
+    padding-right:5em;
+}
+
+.dominance-change{
+    color: var(--cta-link-color);
+}
+
+.ticker-symbol{
+    font-weight: normal;
+}
+
+.chart-container{
+    margin-left:3rem;
+}
+
+#first-dominance{
+    background: url(https://bitcoin.org/img/icons/opengraph.png?1637078881) no-repeat left;
+}
+
+#second-dominance{
+    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Ethereum-icon-purple.svg/1200px-Ethereum-icon-purple.svg.png) no-repeat left;
+}
+
+#third-dominance{
+    background: url(https://s2.coinmarketcap.com/static/img/coins/200x200/825.png) no-repeat left;
+}
+
+
+@media screen and (max-width:998px){
+    .horizontal-scroll{
+        width:35rem;
+    }
+}
+
+
+@media screen and (max-width:1085px) and (min-width:998px){
+    .tile-items > li a{
+        font-size: 12.5px;
+    }
+}
+@media screen and (max-width:1291px) and (min-width:998px){
+    .top-border-content{
+        padding-left:.5em;
+        font-size: var(--p1-font-size);
+    }
+
+    .price-change{
+        font-size:var(--small-font-size);
+        padding-left:0px;
+    }
+
+}
+

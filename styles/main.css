@@ -59,6 +59,10 @@ img:not(.logo-image, .navbar-icon, .nav-button) {
   bottom: 2.1rem;
 }
 
+.top-border{
+  width:100%;
+}
+
 .top-border-content {
   padding-left: 1em;
   color: #fff;
@@ -151,10 +155,13 @@ li a:hover,
 #third-trending,
 #first-bookmark,
 #second-bookmark,
-#third-bookmark {
-  background-size: 25px;
-  height: 15px;
-  padding-left: 30px;
+#third-bookmark,
+#first-dominance,
+#second-dominance,
+#third-dominance {
+  background-size: 25px !important;
+  height: 15px !important;
+  padding-left: 30px !important;
 }
 
 .list-container {
