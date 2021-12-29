@@ -100,9 +100,9 @@
   padding-bottom: 0.8em;
 }
 
-.hashtag-content,
-.data-content {
+.hashtag-content.data-content {
   padding-left: 2em;
+  font-weight: var(--heavy-font-weight);
 }
 
 .hashtag-content{
@@ -128,12 +128,17 @@
 
 .trending-accounts-link {
   color: var(--cta-link-color);
+  font-weight: var(--light-font-weight);
 }
 
 /*****************
 ****************
 *****************/
 /*SECOND SECTION*/
+
+.news-item{
+    flex: 1 0 21%;
+}
 
 /*****************
 ****************
@@ -162,6 +167,16 @@
 
   .horizontal-scroll__item.second-table {
     flex: 1 0 100vw;
+  }
+
+  /*SECOND SECTION*/
+
+  .news-container{
+      padding-left:5em;
+  }
+
+  .news-item{
+      padding-left:1em;
   }
 }
 
@@ -200,3 +215,4 @@
     float: none;
   }
 }
+
