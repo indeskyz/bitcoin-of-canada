@@ -137,7 +137,8 @@
 /*SECOND SECTION*/
 
 .news-item{
-    flex: 1 0 21%;
+    display:flex;
+    flex:1 0 21%;
 }
 
 /*****************
