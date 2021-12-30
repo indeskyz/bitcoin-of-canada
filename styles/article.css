@@ -27,8 +27,8 @@
 *****************/
 /*FIRST SECTION*/
 
-.news-wrapper{
-  padding-left:2em;
+.news-wrapper {
+  padding-left: 2em;
 }
 
 .news-container {
@@ -54,7 +54,7 @@
 }
 
 .article-heading-link {
-  font-size: var(--h3-font-size);
+  font-size: var(--h2-font-size);
 }
 
 .main-article-heading {
@@ -146,23 +146,18 @@
     padding: 0px 0px 2em 0px;
   }
 
-  .news-wrapper{
-    padding-right:2em;
-    display:flex;
-    justify-content:center;
+  .news-wrapper {
+    padding-right: 2em;
+    display: flex;
+    justify-content: center;
   }
 
   .news-heading {
     padding-left: 0px;
   }
 
-  .news-item {
-    padding-right: 0px !important;
-    display:flex;
-    flex-direction: column;
-  }
-
-  .related-article-heading{
+  .article-heading-link {
+    width: 35vw;
     font-size: var(--h2-font-size-mobile);
   }
 
