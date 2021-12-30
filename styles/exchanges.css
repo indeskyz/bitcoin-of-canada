@@ -10,7 +10,8 @@
 }
 
 .tile-container{
-    padding-right:5em;
+    padding-right:2em;
+    padding-left:2em;
 }
 
 .dominance-change{
@@ -21,9 +22,6 @@
     font-weight: normal;
 }
 
-.chart-container{
-    margin-left:3rem;
-}
 
 #first-dominance{
     background: url(https://bitcoin.org/img/icons/opengraph.png?1637078881) no-repeat left;
