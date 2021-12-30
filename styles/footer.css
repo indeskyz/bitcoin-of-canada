@@ -1,7 +1,7 @@
 @import url("./globals.css");
 
 .footer {
-  padding: 50px 0;
+  padding: 3em 1em 1em 1em;
   background-color: var(--navbar-background-color);
   color: var(--navbar-item-color);
   display: flex;
@@ -87,6 +87,7 @@ div.logo-container > img:nth-child(1) {
 
   .footer-logo {
     grid-area: footer-logo;
+    padding-left:0px;
   }
 
   .item-1 {
@@ -106,7 +107,7 @@ div.logo-container > img:nth-child(1) {
   }
   
   .item-1, .item-3 {
-    margin-left:28em;
+    margin-left:27em;
     padding-right:1em;
   }
 
@@ -126,13 +127,10 @@ div.logo-container > img:nth-child(1) {
     grid-area: copyright-hidden;
   }
 
-  .footer-logo {
-    padding-left: 2rem !important;
-  }
 
   .share-bttn {
     padding-bottom: 1em;
-    padding-left: 1.7rem;
+    padding-left: .2rem;
   }
 
   .copyright {
@@ -141,7 +139,7 @@ div.logo-container > img:nth-child(1) {
 
   .copyright-hidden {
     display: block;
-    margin-left:2em;
+    margin-left:3em;
   }
 }
 @media screen and (max-width:340px) {

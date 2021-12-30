@@ -15,7 +15,7 @@ select:focus {
   outline: none;
 }
 
-img:not(.logo-image, .navbar-icon, .nav-button, .) {
+img:not(.logo-image, .navbar-icon, .nav-button) {
   max-width: 100%;
   height: auto;
 }
@@ -314,7 +314,8 @@ li a:hover,
 .related-article-heading {
   font-size: var(--h3-font-size);
   font-weight: var(--heavy-font-weight);
-  width: 20vw;
+  display: inline-block;
+  width: 30vw;
   padding-right: 5em;
 }
 
