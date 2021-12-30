@@ -174,5 +174,15 @@ div.right-content > span:nth-child(1) {
   .article-heading-link{
     width:5em;
   }
-
 }
+
+@media screen and (max-width:350px){
+
+ .twitter-tweet{
+   width:20rem !important;
+ } 
+.tweets {
+    padding-left: 5em;
+  }
+}
+
