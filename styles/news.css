@@ -153,23 +153,19 @@
   }
 
   .article-section{
-    width:30rem;
+    display:flex;
+    flex-direction: column;
+  }
+
+  .article-heading-link{
+    max-width:30%;
   }
 
   /*SECOND SECTION*/
   .news-item{
-    padding-right:0px;
+    padding-right:1em;
+    padding-left:1em;
+    width:auto;
   }
 }
 
-
-@media screen and (max-width:496px){
-  .article-section {
-    width:15em;
-  }
-
-  .article-heading-link{
-    width:5em;
-  }
-
-}
