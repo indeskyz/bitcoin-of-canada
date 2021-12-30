@@ -402,14 +402,15 @@ hr {
 
 @media screen and (max-width: 998px) {
   /*FIRST SECTION*/
-
+  .wrapper{
+    padding: 0px 0px 0px 0px;
+  }
   .first-section-container {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding-left: 3em;
-    padding-right: 6em;
+    padding: 2em 0px 0px 0px;
   }
 
   .main-heading {
@@ -429,7 +430,6 @@ hr {
     display: block;
     padding-bottom: 1em;
     padding-top: 1em;
-    padding-left: 0.5em;
   }
 
   .horizontal-scroll::-webkit-scrollbar {
@@ -466,7 +466,6 @@ hr {
 
   .tile-container {
     padding-top: 0px;
-    margin-left: 2em;
   }
 
   .tile-heading-icon {
@@ -509,6 +508,10 @@ hr {
     font-size: 14px;
   }
 
+  .view-all-button{
+    padding-bottom:2em;
+  }
+
   /*COMING SOON TILE*/
 
   #coming-soon-icon {
@@ -528,12 +531,11 @@ hr {
 
   .chart-container {
     padding-left: 0px;
-    padding-right: 3em;
     padding-top: 3em;
   }
 
   .tradingview-widget-container {
-    margin-left: 3em;
+    padding-left: 2em;
   }
 
   .mobile-only {
@@ -548,6 +550,7 @@ hr {
   .second-section-container {
     display: flex;
     flex-direction: column;
+    padding: 0px 0px 0px 0px;
   }
 
   .heading-container {
@@ -570,6 +573,8 @@ hr {
 
   .news-section {
     flex-direction: column;
+    padding-left:1em;
+    padding-right:1em;
   }
   .news-button {
     display: none;
@@ -610,10 +615,13 @@ hr {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 0px 0px 0px 0px;
   }
 
   .social-wrapper {
     flex-direction: column;
+    padding-left:1em;
+    padding-right:1em;
   }
 
   .data-table {
@@ -623,6 +631,10 @@ hr {
   .tweets {
     justify-content: space-evenly;
     flex-wrap: wrap;
+  }
+
+  .social-button{
+    padding-bottom:2em;
   }
 }
 
