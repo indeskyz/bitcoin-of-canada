@@ -172,12 +172,23 @@
 
   /*SECOND SECTION*/
 
+  .second-section-container{
+    display:block;
+  }
+
+  .news-wrapper{
+    display:block;
+  }
+
   .news-container{
-      padding-left:5em;
+    flex-direction: row;
+    align-items: initial;
   }
 
   .news-item{
-      padding-left:1em;
+      padding-left:2em;
+      padding-right:2em;
+      align-items:center;
   }
 }
 
@@ -215,5 +226,12 @@
   .trending-percentage.right-content {
     float: none;
   }
+}
+
+@media screen and (max-width: 484px) {
+  .twitter-tweet{
+    width:20rem !important;
+  }
+
 }
 
