@@ -222,6 +222,31 @@
   }
 }
 
+@media screen and (max-width: 1151px) and (min-width: 1034px) {
+
+  .news-container div{
+    width:400px;
+
+  }
+
+}
+@media screen and (max-width: 1052px) and (min-width: 1000px) {
+
+  .news-container div{
+    width:380px;
+
+  }
+
+}
+@media screen and (max-width: 1010px) and (min-width: 1000px) {
+
+  .news-container div{
+    width:370px;
+
+  }
+
+}
+
 @media screen and (max-width: 1820px) and (min-width: 998px) {
   /*FIRST SECTION*/
   .tile-data-right-content {
